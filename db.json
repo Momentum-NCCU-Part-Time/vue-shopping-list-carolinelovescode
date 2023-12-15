@@ -1,0 +1,31 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "title": "Sample shopping list",
+      "items": [
+        {
+          "id": 1,
+          "item-name": "toilet paper",
+          "purchased": false
+        },
+        {
+          "id": 2,
+          "item-name": "paper plates",
+          "purchased": false
+        },
+        {
+          "id": 3,
+          "item-name": "paper towels",
+          "purchased": false
+        },
+        {
+          "id": 4,
+          "item-name": "water bottles",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}
