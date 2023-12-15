@@ -4,19 +4,17 @@ import { ref } from 'vue'
 // import App from '../../App.vue'
 
 const lists = ref([''])
-// get the notes to show up
-fetch('http://localhost:3000/notes/', {
-  method: 'GET'
-})
-  .then((res) => res.json())
-  .then((item) => (lists.value = item))
+const addList = ref('')
 </script>
 
 <template>
-  <form class="shop-list">
-    <input v-model="lists" type="text" class="add-list" />
-    <button class="btn-add">I Need This</button>
-    <!-- <p>{{ lists || 'You Got It All' }}</p> -->
+  <!-- create input form and button to add items -->
+
+  <form class="shop-form">
+    <input v-model.trim="addList" type="text" class="add-list" placeholder="What do you need?" />
+    {{ addList }}
+    <button v-on:click="items.push" class="btn-add">I Need This</button>
+    <!-- <p>{{ list || 'You Got It All' }}</p> -->
   </form>
   <!-- <ShopList /> -->
 </template>
