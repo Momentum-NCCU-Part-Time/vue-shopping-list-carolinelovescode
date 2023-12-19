@@ -20,6 +20,7 @@ fetch('http://localhost:3000/lists/', {
       <h3>{{ list.id }} {{ list.title }}</h3>
 
       <li v-for="item in list.items">{{ item.itemName }} {{ item.purchased }}</li>
+
       <!-- {{
         console.log(itemName)
       }} -->
