@@ -6,22 +6,22 @@
       "items": [
         {
           "id": 1,
-          "item-name": "toilet paper",
+          "itemName": "toilet paper",
           "purchased": false
         },
         {
           "id": 2,
-          "item-name": "paper plates",
+          "itemName": "paper plates",
           "purchased": false
         },
         {
           "id": 3,
-          "item-name": "paper towels",
+          "itemName": "paper towels",
           "purchased": false
         },
         {
           "id": 4,
-          "item-name": "water bottles",
+          "itemName": "water bottles",
           "purchased": false
         }
       ],
@@ -33,16 +33,41 @@
       "items": [
         {
           "id": 1,
-          "item-name": "thigh high boots",
+          "itemName": "thigh high boots",
           "purchased": false
         },
         {
           "id": 2,
-          "item-name": "t-shirt dress",
+          "itemName": "t-shirt dress",
           "purchased": false
         }
       ],
       "updatedAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "title": "Anyhow",
+      "body": "",
+      "id": 3
+    },
+    {
+      "title": "Hallelujah",
+      "body": "",
+      "id": 4
+    },
+    {
+      "title": "So when I add",
+      "body": "",
+      "id": 5
+    },
+    {
+      "title": "Fashion nova",
+      "body": "Christmas gifts",
+      "id": 6
+    },
+    {
+      "title": "I really want to get both lists to show up",
+      "body": "But how can I do that ffrrfrfrfrfr",
+      "id": 7
     }
   ]
 }

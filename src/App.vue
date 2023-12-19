@@ -9,6 +9,7 @@ import ShopList from './assets/components/ShopList.vue'
     <h1>Caroline Loves Vue Shopping List</h1>
     <!-- your code here -->
   </div>
+
   <ShopForm />
   <ShopList />
 </template>
