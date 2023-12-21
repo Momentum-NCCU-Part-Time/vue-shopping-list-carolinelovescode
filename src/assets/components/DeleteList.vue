@@ -5,7 +5,7 @@ const lists = ref([''])
 const listTitle = ref('')
 
 const deleteList = () => {
-  fetch('http://localhost:3000/lists/:id', {
+  fetch('http://localhost:3000/lists/', {
     method: 'DELETE',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ title: listTitle.value })
@@ -16,9 +16,9 @@ const deleteList = () => {
 </script>
 
 <template>
-  <div v-for="list in lists">
-    <button v-on:submit.prevent="deleteList" class="btn-del">I Don't Need This</button>
-
-    {{ lists }}
+  <div>
+    <!-- <button @click.prevent="deleteList(item.id)" :key="item.id" class="btn btn-del">
+      I Don't Need This
+    </button> -->
   </div>
 </template>

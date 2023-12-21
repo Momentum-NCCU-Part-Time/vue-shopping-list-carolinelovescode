@@ -2,30 +2,21 @@
   "lists": [
     {
       "id": 1,
-      "title": "Sample shopping list",
+      "title": "Sample Shopping List",
       "items": [
         {
           "id": 1,
-          "itemName": "toilet paper",
+          "itemName": "apples",
           "purchased": false
         },
         {
           "id": 2,
-          "itemName": "paper plates",
-          "purchased": false
-        },
-        {
-          "id": 3,
-          "itemName": "paper towels",
-          "purchased": false
-        },
-        {
-          "id": 4,
-          "itemName": "water bottles",
+          "itemName": "oranges",
           "purchased": false
         }
       ],
-      "updatedAt": "2018-01-01T00:00:00.000Z"
+      "updatedAt": "2018-01-01T00:00:00.000Z",
+      "purchased": false
     },
     {
       "id": 2,
@@ -43,6 +34,16 @@
         }
       ],
       "updatedAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "title": "Do you need this",
+      "purchased": "false",
+      "id": 3
+    },
+    {
+      "title": "I am so like omg",
+      "purchased": "false",
+      "id": 4
     }
   ]
 }
