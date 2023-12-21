@@ -1,0 +1,49 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "title": "Sample Shopping List",
+      "items": [
+        {
+          "id": 1,
+          "itemName": "apples",
+          "purchased": false
+        },
+        {
+          "id": 2,
+          "itemName": "oranges",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2018-01-01T00:00:00.000Z",
+      "purchased": false
+    },
+    {
+      "id": 2,
+      "title": "Shein Cart",
+      "items": [
+        {
+          "id": 1,
+          "itemName": "thigh high boots",
+          "purchased": false
+        },
+        {
+          "id": 2,
+          "itemName": "t-shirt dress",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "title": "Do you need this",
+      "purchased": "false",
+      "id": 3
+    },
+    {
+      "title": "I am so like omg",
+      "purchased": "false",
+      "id": 4
+    }
+  ]
+}

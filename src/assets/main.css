@@ -1,0 +1,37 @@
+* {
+  color: azure;
+  background-color: #101447;
+}
+input {
+  padding: 12px 20px;
+}
+/* .form-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #364281;
+  width: 27%;
+  color: azure;
+  font-size: large;
+} */
+.shop-form {
+  display: block;
+  padding: 12px;
+}
+.btn {
+  color: azure;
+  background-color: #364281;
+  padding: 12px 20px;
+}
+.list-items {
+  color: azure;
+}
+.list-head {
+  color: azure;
+  /* background-color: #2e3d6d; */
+  width: 30%;
+}
+.listOfShop {
+  display: block;
+  border: 2px #101447 solid;
+}
