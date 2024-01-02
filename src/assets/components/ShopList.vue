@@ -25,8 +25,8 @@ fetch('http://localhost:3000/lists/', {
   <div class="listOfShop">
     <ul v-for="list in lists" :key="list.id" class="listItems">
       <h3 class="list-head">{{ list.title }}</h3>
-      <!-- <DeleteList /> -->
-      <AddToList :propId="list.id" :listProp="list.items" />
+      <DeleteList :list="list" @listDeleted="getLists" />
+      <AddToList :propId="list.id" :listProp="list" />
       <div v-for="item in list.items" :key="item.id">
         <li class="list-items">{{ item.itemName }} {{ item.purchased }}</li>
         <input v-model="truePurch" type="checkbox" />

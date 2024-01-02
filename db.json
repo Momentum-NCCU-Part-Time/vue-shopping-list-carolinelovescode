@@ -18,10 +18,17 @@
           "id": 3,
           "itemName": "lemons",
           "purchased": false
+        },
+        {
+          "itemName": "trail mix",
+          "purchased": false
+        },
+        {
+          "itemName": "chicken breasts",
+          "purchased": false
         }
       ],
-      "updatedAt": "2018-01-01T00:00:00.000Z",
-      "purchased": false
+      "updatedAt": "2024-01-02T22:10:12.102Z"
     },
     {
       "id": 2,
@@ -36,9 +43,33 @@
           "id": 2,
           "itemName": "t-shirt dress",
           "purchased": false
+        },
+        {
+          "itemName": "underwear",
+          "purchased": false
+        },
+        {
+          "itemName": "sweater dress",
+          "purchased": false
         }
       ],
-      "updatedAt": "2018-01-01T00:00:00.000Z"
+      "updatedAt": "2024-01-02T22:08:34.791Z"
+    },
+    {
+      "id": 3,
+      "title": "Needs from Amazon",
+      "items": [
+        {
+          "id": 1,
+          "itemName": "lamps",
+          "purchased": false
+        },
+        {
+          "itemName": "couch cover",
+          "purchased": false
+        }
+      ],
+      "updatedAt": "2024-01-02T22:27:04.412Z"
     }
   ]
 }

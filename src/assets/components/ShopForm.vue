@@ -16,7 +16,7 @@ const addTo = () => {
     body: JSON.stringify({ title: listTitle.value, purchased: 'false' })
   })
     .then((res) => res.json())
-    .then((lists) => newInput())
+    .then((lists) => newInput(lists))
 }
 </script>
 

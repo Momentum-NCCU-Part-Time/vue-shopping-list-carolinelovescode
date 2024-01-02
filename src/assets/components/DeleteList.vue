@@ -1,24 +1,31 @@
 <script setup>
 import { ref } from 'vue'
 
-const lists = ref([''])
-const listTitle = ref('')
+const deleting = ref(false)
+const props = defineProps({ list: Object })
+const emit = defineEmits(['listDeleted'])
 
-const deleteList = () => {
-  fetch('http://localhost:3000/lists/', {
-    method: 'DELETE',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ title: listTitle.value })
+const deleteList = (list) => {
+  fetch('http://localhost:3000/lists/' + props.list.id, {
+    method: 'DELETE'
   })
     .then((res) => res.json())
-    .then((data) => (lists.value = data))
+    .then((deletedList) => {
+      emit('listDeleted', deletedList)
+    })
+}
+
+function confirmDelete(e) {
+  deleting.value = e
 }
 </script>
 
 <template>
-  <div>
-    <!-- <button @click.prevent="deleteList(item.id)" :key="item.id" class="btn btn-del">
-      I Don't Need This
-    </button> -->
-  </div>
+  <form>
+    <button v-if="deleting" class="btn" @click="confirmDelete(false)">No I will keep it</button>
+    <button v-else class="confirmDeleteBtn" @click="confirmDelete(true)">Delete</button>
+    <form class="deleteButton" v-if="deleting" @click.prevent="deleteList(list)">
+      <button type="submit">Get Rid of It</button>
+    </form>
+  </form>
 </template>
