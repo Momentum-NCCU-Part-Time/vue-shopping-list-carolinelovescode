@@ -25,12 +25,12 @@ const autoReset = () => {
 }*/
 
 const addListItem = () => {
-  fetch('http://localhost:3000/lists/' + props.list.id, {
+  fetch('http://localhost:3000/lists/' + props.propId, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      id: props.propId,
-      items: props.listProp
+      itemName: newItem.value,
+      items: [...props.listProp, { itemName: newItem.value, purchased: false }]
     })
       .then((res) => res.json())
       .then((data) => console.log(data))
@@ -41,7 +41,7 @@ const addListItem = () => {
 
 <template>
   <div>
-    <form @submit.prevent="addListItem">
+    <form @submit.prevent="addListItem()">
       <input type="text" v-model="newItem" @keyup.enter="submit" />
       <!-- This goes with the above: <input v-model="itemToUpdate" /> -->
       <button class="btn btn-edit">Add New Item</button>

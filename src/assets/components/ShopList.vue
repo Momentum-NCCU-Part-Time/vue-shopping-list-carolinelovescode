@@ -22,13 +22,13 @@ fetch('http://localhost:3000/lists/', {
 </script>
 
 <template>
-  <div v-for="list in lists" class="listOfShop" :key="list.id">
-    <ul class="listItems">
-      <h3 class="list-head">{{ list.id }}{{ list.title }}</h3>
-      <DeleteList />
+  <div class="listOfShop">
+    <ul v-for="list in lists" :key="list.id" class="listItems">
+      <h3 class="list-head">{{ list.title }}</h3>
+      <!-- <DeleteList /> -->
       <AddToList :propId="list.id" :listProp="list.items" />
       <div v-for="item in list.items" :key="item.id">
-        <li class="list-items">{{ item.id }}{{ item.itemName }} {{ item.purchased }}</li>
+        <li class="list-items">{{ item.itemName }} {{ item.purchased }}</li>
         <input v-model="truePurch" type="checkbox" />
       </div>
       <!-- {{
